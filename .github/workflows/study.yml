@@ -1,6 +1,11 @@
 name: Do a Duolingo lesson
 
 on:
+inputs:
+      lessons:
+        description: 'Number of lessons to be completed'
+        required: false
+        type: number
   schedule:
   - cron: "*/5 * * * *"
 
