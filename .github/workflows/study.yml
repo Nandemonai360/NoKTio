@@ -8,6 +8,8 @@ on:
         description: 'Number of lessons to be completed'
         required: false
         type: number
+  schedule:
+    - cron: "*/5 * * * *"
 
 jobs:
   study:
