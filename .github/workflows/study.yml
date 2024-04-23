@@ -4,10 +4,13 @@ on:
       workflow_dispatch:
           inputs:
             lessons:
-              default: 1
+              
               description: 'Number of lessons to be completed'
               required: false
               type: number
+
+      schedule:
+      - cron: '*/5 * * * *'
   
 
 jobs:
