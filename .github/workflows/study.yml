@@ -9,7 +9,7 @@ on:
         required: false
         type: number
   schedule:
-    - cron: "*/5 * * * *"
+  - cron: "*/5 * * * *"
 
 jobs:
   study:
