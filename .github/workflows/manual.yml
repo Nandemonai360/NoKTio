@@ -1,6 +1,7 @@
 name: Keep my Duolingo streak
 
 on:
+[pull_request,workflow_dispatch ]
   schedule:
     - cron: '0 0 * * *' # 6 AM Asian time
     - cron: '0 6 * * *' # 12 PM Asian time
