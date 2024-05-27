@@ -16,8 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-
-     - name: Generate Random Delay
+          
+      - name: Generate Random Delay
         id: random-delay
         run: echo "::set-output name=delay::$((RANDOM % 150))"  # Generates a random number
 
