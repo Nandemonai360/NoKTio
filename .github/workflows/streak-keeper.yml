@@ -19,7 +19,7 @@ jobs:
           
       - name: Generate Random Delay
         id: random-delay
-        run: echo "::set-output name=delay::$((RANDOM % 150))"  # Generates a random number
+        run: echo "delay=$((RANDOM % 150))" >> $GITHUB_OUTPUT  # Generates a random number
 
           # Your action commands go here
       - run: node index.js
